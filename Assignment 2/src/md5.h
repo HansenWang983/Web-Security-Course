@@ -7,13 +7,7 @@
 #include <cmath>
 #include <iostream>
 #include <bitset>
-using std::string;
-using std::vector;
-using std::bitset;
-using std::cout;
-using std::endl;
-using std::sin;
-using std::abs;
+using namespace std;
 
 // T表
 const int T[] = {
@@ -52,7 +46,7 @@ class MD5 {
 public:
     MD5();
     ~MD5();
-    string encrypt(string plain);
+    string getDigest(string plain);
     // 输出扩展后的消息
     void print_buff();
 
@@ -66,6 +60,7 @@ private:
 
     // 填充
     void padding(string plain);
+    // 清除buffer
     void clear();
     // 压缩函数
     void h_md5(int groupid);
@@ -80,7 +75,7 @@ private:
     unsigned int HH(unsigned int a,unsigned int b, unsigned int c, unsigned int d,unsigned int X,unsigned int s,unsigned int t);
     unsigned int II(unsigned int a,unsigned int b, unsigned int c, unsigned int d,unsigned int X,unsigned int s,unsigned int t);
 
-    // 返回 MD 缓冲区转换后的 string 格式密文 
+    // 返回 MD 缓冲区转换后的 16进制string  
     string md2str();
 
     // 返回 buffer 中 [pos, pos + 3] 四个字节按照 little-endian 组成的 X

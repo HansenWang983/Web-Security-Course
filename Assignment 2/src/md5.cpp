@@ -13,8 +13,13 @@ MD5::~MD5() {
     clear();
 }
 
-string MD5::encrypt(string plain) {
+string MD5::getDigest(string plain) {
     clear();
+    md.push_back(0x67452301);
+    md.push_back(0xefcdab89);
+    md.push_back(0x98badcfe);
+    md.push_back(0x10325476);
+    
     padding(plain);
 
     int group_len = buffer_len / 64;
@@ -41,6 +46,7 @@ void MD5::clear() {
         delete []buffer;
         buffer = NULL;
     }
+    md.clear();
 }
 
 // 填充 padding 和 length
@@ -127,7 +133,7 @@ void MD5::h_md5(int groupid) {
             md[1] = next;
         }
     }
-    // 得到最后一次迭代的结果
+    // 得到最后一次迭代的结果和初始CV的相加
     for (int i = 0; i < 4; ++i) 
         md[i] += last_md[i];
 }
@@ -161,9 +167,13 @@ string MD5::md2str() {
 
     for (int i = 0; i < 4; ++i) {
         unsigned int val = md[i];
+        // cout << "val: " << hex << val <<endl;
         for (int j = 0; j < 4; ++j) {
+            // 得到8位unsigned char
             unsigned char ch = val;
+            // 将其转换为16进制字符串
             res += uchar2hex(ch);
+            // 从低位到高位
             val >>= 8;
         }
     }
@@ -186,11 +196,15 @@ unsigned int MD5::uchar2uint(int pos) {
 string MD5::uchar2hex(unsigned char uch) {
     string res;
     unsigned char mask = 0x0F;
-
+    // debug 
+    // cout << int(uch) <<endl;
     for (int i = 1; i >= 0; --i) {
         char ch = uch >> (i << 2) & mask;
-        if (ch < 10) ch += '0';
-        else ch += 'A' - 10;
+        // cout << int(ch)<<endl;
+        if (ch < 10) 
+            ch += '0';
+        else 
+            ch += 'A' - 10;
         res += ch;
     }
 
