@@ -158,9 +158,9 @@ T[i] = int(2^32 *abs(sin(i))
 
 公有函数除构造函数和析构函数外有：
 
-1.  获得128位的信息摘要
+1. 获得128位的信息摘要
 
-   string getDigest(string plain);
+   `string getDigest(string plain);`
 
 
 
@@ -192,7 +192,7 @@ const int T[] = {
 
 关键函数：
 
-1. 总体结构
+1. 总体循环结构
 
 ```c++
 string MD5::getDigest(string plain) {
