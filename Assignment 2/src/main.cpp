@@ -11,9 +11,10 @@ int main() {
     string message2 = "!@#$abcd1234! ";
     string digest2 = md5.getDigest(message2);
 
+    
     cout << "message1: " << message1 << endl;
-    cout << "digest1: " << digest1 << endl;
-
+    cout << "128 bits digest1 in hex: " << digest1 << endl;
+    cout << endl <<endl;
     cout << "message2: " << message2 << endl;
-    cout << "digest2: " << digest2 << endl;
+    cout << "128 bits digest2 in hex: " << digest2 << endl;
 }

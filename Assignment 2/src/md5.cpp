@@ -14,19 +14,24 @@ MD5::~MD5() {
 }
 
 string MD5::getDigest(string plain) {
+    // 回收buffer和缓冲区md
     clear();
+    // 初始化缓冲区
     md.push_back(0x67452301);
     md.push_back(0xefcdab89);
     md.push_back(0x98badcfe);
     md.push_back(0x10325476);
-    
+    // 填充扩展
     padding(plain);
 
+    // 获得总组数
     int group_len = buffer_len / 64;
 
+    // 对每组进行压缩并迭代
     for (int i = 0; i < group_len; ++i) 
         h_md5(i);
 
+    // 返回16进制字符串
     return md2str();
 }
 
