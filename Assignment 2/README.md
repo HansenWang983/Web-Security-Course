@@ -1,10 +1,12 @@
 # MD5
 
+[github仓库](https://github.com/hansenbeast/Web-Security-Course/tree/master/Assignment%202)
+
 ## 算法原理概述
 
 MD5 使用 little-endian (小端模式)，输入任意不定长度信息，以 512-bit 进行分组，生成四个32-bit 数据，最后联合输出固定 128-bit 的信息摘要。
 
-
+这种不可逆的哈希算法一般用于一致性验证，如典型的数字签名和MD5校验。
 
 ## 总体结构
 
