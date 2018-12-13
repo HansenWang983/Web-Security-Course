@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     // ifstream file;
     // file.open("smp.ruijie.com.cn.cer",ios::in);
     FILE *fr;
-    fr=fopen("smp.ruijie.com.cn.cer","rb");
+    fr=fopen("CA.crt","rb");
     if(fr==NULL)  
     {  
         cout << "Read Error!"<<endl;

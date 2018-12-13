@@ -1,0 +1,40 @@
+VERSION:  V3
+default version:
+SERIAL NUMBER:  9dd14c7a855c0d697f922264847f8f
+SIGNATURE ALGORITHM:  sha1RSA
+    args needed in SIGNATURE ALGORITHM:  None
+ISSUER:
+     Country:
+         US
+     Organization name:
+         DigiCert Inc
+     Organizational Unit name:
+         www.digicert.com
+     Common Name:
+         DigiCert High Assurance CA-3
+VALIDITY:
+    not before:  130514000000Z
+    not after:  160518120000Z
+SUBJECT:
+     Country:
+         CA
+     Sate or province name:
+         Alberta
+     Locality:
+         Calgary
+     Organization name:
+         SAIT Polytechnic
+     Common Name:
+         *.sait.ca
+SUBJECT PUBLIC KEY INFO:
+    Algorithm:  RSA
+    args needed in PUBLIC KEY ALGORITHM:  None
+    Subject Public Key:
+    003082010a02820101009bf69f99997d7e8d5748d9a1fd567571a263943f5b4c834fab547486148e04bc18391e649623b705023180f65a8deb17fd5927ca7da765813f5177095be380ef95780eed2c9b1fb80afe4bc184d6ae6d18ef7e94f164040664537f0535f0546e5bf3d629966fa3915cc73ef878d496b501d27af601ef13d48dcad17180ac72725b9bad2795e6f1d34460272ce84017721895895b5c676c4895240cb3e02a86a9d95e8d93b751fe7ffb5085025e313919da492551c9d0d62cdd4e280c8243af3735b83b277d674b016f1cd4a6779e1f79d40796c4bf7306e09271edc0153c4e2baa355bb66defd106c22ff5f466770988a97b85e2963be8f70e70d94bfa2588890203010001
+--------------------EXTENSION PART--------------------
+0\x82\x03\x8b0\x1f\x06\x03U\x1d#\x04\x180\x16\x80\x14P\xeas\x89\xdb)\xfb\x10\x8f\x9e\xe5\x01 \xd4\xdey\x99H\x83\xf70\x1d\x06\x03U\x1d\x0e\x04\x16\x04\x14\xe4\xd3B\x84n\xb8kN\xe5V\x05\x8d\x9c?4\xc9wW5\x050d\x06\x03U\x1d\x11\x04]0[\x82\t*.sait.ca\x82\x07sait.ca\x82\ncp.sait.ca\x82\x0ecp-uat.sait.ca\x82\x17uat-integration.sait.ca\x82\x10uat-apas.sait.ca0\x0e\x06\x03U\x1d\x0f\x01\x01\xff\x04\x04\x03\x02\x05\xa00\x1d\x06\x03U\x1d%\x04\x160\x14\x06\x08+\x06\x01\x05\x05\x07\x03\x01\x06\x08+\x06\x01\x05\x05\x07\x03\x020a\x06\x03U\x1d\x1f\x04Z0X0*\xa0(\xa0&\x86$http://crl3.digicert.com/ca3-g21.crl0*\xa0(\xa0&\x86$http://crl4.digicert.com/ca3-g21.crl0\x82\x01\xc4\x06\x03U\x1d \x04\x82\x01\xbb0\x82\x01\xb70\x82\x01\xb3\x06\t`\x86H\x01\x86\xfdl\x01\x010\x82\x01\xa40:\x06\x08+\x06\x01\x05\x05\x07\x02\x01\x16.http://www.digicert.com/ssl-cps-repository.htm0\x82\x01d\x06\x08+\x06\x01\x05\x05\x07\x02\x020\x82\x01V\x1e\x82\x01R\x00A\x00n\x00y\x00 \x00u\x00s\x00e\x00 \x00o\x00f\x00 \x00t\x00h\x00i\x00s\x00 \x00C\x00e\x00r\x00t\x00i\x00f\x00i\x00c\x00a\x00t\x00e\x00 \x00c\x00o\x00n\x00s\x00t\x00i\x00t\x00u\x00t\x00e\x00s\x00 \x00a\x00c\x00c\x00e\x00p\x00t\x00a\x00n\x00c\x00e\x00 \x00o\x00f\x00 \x00t\x00h\x00e\x00 \x00D\x00i\x00g\x00i\x00C\x00e\x00r\x00t\x00 \x00C\x00P\x00/\x00C\x00P\x00S\x00 \x00a\x00n\x00d\x00 \x00t\x00h\x00e\x00 \x00R\x00e\x00l\x00y\x00i\x00n\x00g\x00 \x00P\x00a\x00r\x00t\x00y\x00 \x00A\x00g\x00r\x00e\x00e\x00m\x00e\x00n\x00t\x00 \x00w\x00h\x00i\x00c\x00h\x00 \x00l\x00i\x00m\x00i\x00t\x00 \x00l\x00i\x00a\x00b\x00i\x00l\x00i\x00t\x00y\x00 \x00a\x00n\x00d\x00 \x00a\x00r\x00e\x00 \x00i\x00n\x00c\x00o\x00r\x00p\x00o\x00r\x00a\x00t\x00e\x00d\x00 \x00h\x00e\x00r\x00e\x00i\x00n\x00 \x00b\x00y\x00 \x00r\x00e\x00f\x00e\x00r\x00e\x00n\x00c\x00e\x00.0{\x06\x08+\x06\x01\x05\x05\x07\x01\x01\x04o0m0$\x06\x08+\x06\x01\x05\x05\x070\x01\x86\x18http://ocsp.digicert.com0E\x06\x08+\x06\x01\x05\x05\x070\x02\x869http://cacerts.digicert.com/DigiCertHighAssuranceCA-3.crt0\x0c\x06\x03U\x1d\x13\x01\x01\xff\x04\x020\x00
+--------------------EXTENSION End--------------------
+Certificate Signature Algorithm: :  sha1RSA
+    args needed in CERTIFICATE ALGORITHM:  None
+Certificate Signature:
+    00725d9823488c3b0c7614e8dfa00f22a02b4673979a83c3eb6b0cf8145b3da4c1597c3fcaf10bcfc9c312930ee43ed5639ae416c4db5102f092221affbaba8d2c13b93a67abc7c6996023b39ec999a729b132de7a0c1c3e299ad622876c671e508d59e06c4fea2032e6b1882d29cce14c2b6010cd61fc81e53b71e8ec85ddd91af80aa78ca0cdaff8c4d5d85615118507269d04054fc032e0633dfe984ff59730daba7e7f96269c5cab02492ad061edcdaf4539256a16e1d456a22746852640c7e2d6ac6c3ebd250f11d95e4e4ae187e90ec41a5a4d97eba7aad5322ac00bf3a1ef8331790f9d42f539855c4b574e53ca9e3a2a9f54c2e11aa9aaf87e14758f25
