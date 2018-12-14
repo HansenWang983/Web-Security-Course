@@ -77,7 +77,7 @@ openssl x509 -inform der -in certificate.cer -out certificate.pem #DER 转为 PE
 
 1. 之前说过ASN.1以TLV（Tag标签、Length长度、Value值）来表示数据，ASN.1格式中的第一个字节表示了类型，在ASN.1中，有预定义的30种类型，只需要5个bit就够了，剩余的3个bits表示什么呢？
 
-通常这一个字节被分为了3段。 最高的两位bit[7]和bit[6]表示TagClass，表示这个标签的类
+   通常这一个字节被分为了3段。 最高的两位bit[7]和bit[6]表示TagClass，表示这个标签的类
 
 ![1](Assets/2.jpg)
 
@@ -121,7 +121,7 @@ openssl x509 -inform der -in certificate.cer -out certificate.pem #DER 转为 PE
 
 DER二进制文件的前4个字节构成具有剩余字节的ASN.1序列。
 
-如`30 82 06 E1`根据Type-Length-Value表示，第一个字节30（00110000）表示后面是一个结构化类型，且为SEQUENCE。
+如`30 82 06 E1`根据Type-Length-Value表示，第一个字节30（00110000）表示是一个universal class type，后面是一个结构化类型的SEQUENCE。
 
 
 
@@ -143,7 +143,7 @@ DER二进制文件的前4个字节构成具有剩余字节的ASN.1序列。
 
 
 
-**证书中具体的数据结构**
+**证书中具体的数据结构**（From RFC 5280）
 
 ```
 Certificate ::= SEQUENCE {
@@ -255,6 +255,8 @@ Extension  ::=  SEQUENCE  {
      critical    BOOLEAN DEFAULT FALSE,
      extnValue   OCTET STRING  }
 ```
+
+
 
 
 
