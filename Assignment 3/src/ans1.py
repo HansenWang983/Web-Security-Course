@@ -7,6 +7,27 @@ Version = {
     "2" : "v3"
 }
 
+# DN映射
+DN = {
+    "2.5.4.6" : "Country Name",
+    "2.5.4.10" : "Organization Name",
+    "2.5.4.11" : "Organizational Unit Name",
+    "2.5.4.3" : "Common Name",
+    "2.5.4.8" : "Sate or Province Name",
+    "2.5.4.7" : "Locality Name",
+}
+
+# 签名算法映射
+ALGORITHM = {
+    '1.2.840.10040.4.1': 'DSAEncryption',
+    "1.2.840.10040.4.3" : "sha1WithDSAEncryption",
+    "1.2.840.113549.1.1.1" :"RSAEncryption",
+    "1.2.840.113549.1.1.2" : "md2WithRSAEncryption",
+    "1.2.840.113549.1.1.3" : "md4WithRSAEncryption",
+    "1.2.840.113549.1.1.4" : "md5WithRSAEncryption",
+    "1.2.840.113549.1.1.5" : "sha1WithRSAEncryption",
+}
+
 filename = 'cert.der'
 f = open(filename,'rb')
 Extension = False
@@ -29,6 +50,17 @@ OCTSTR_CHIOCE.put("SIGNATURE Encryption")
 TIME_CHIOCE = queue.Queue()
 TIME_CHIOCE.put("Not Before")
 TIME_CHIOCE.put("Not After")
+
+# Object输出选项
+OBJ_CHIOCE = queue.Queue() 
+OBJ_CHIOCE.put("Signature Algorithm")
+OBJ_CHIOCE.put("Issuer")
+OBJ_CHIOCE.put("Subject")
+OBJ_CHIOCE.put("Subject Public Key Info")
+# OBJ_CHIOCE.put("Public Key Algorithm")
+OBJ_CHIOCE.put("Signature Algorithm")
+
+OBJ_Count = 0
 
 def parse_Length(nextByte):
     length = 0
@@ -122,11 +154,12 @@ def print_parse_string(parse_string):
     global Extension
     global Type 
     global Tag
+    global OBJ_Count
 
     if Extension == True:
         print("--------------------EXTENSION BEGIN--------------------")
         # print(parse_string)
-        print("--------------------EXTENSION End--------------------")
+        print("--------------------EXTENSION End----------------------")
         Extension = False
         return
 
@@ -134,13 +167,12 @@ def print_parse_string(parse_string):
         choice = INTEGER_CHIOCE.get()
         if choice == "Serial Number":
             temp = ""
-            print(parse_string)
             for i in range(0,len(parse_string)-3):
                 temp +=  parse_string[i:i+2] + ":"
             temp += parse_string[len(parse_string)-2:len(parse_string)]
-            print(choice,":\n",temp)
-        else:
-            print(choice,": ",Version[parse_string])
+            print(choice,":\n",temp,"\n")
+        elif choice != "Default Version":
+            print(choice,": ",Version[parse_string],"\n")
 
     elif Type == 3:
         choice = OCTSTR_CHIOCE.get()
@@ -150,41 +182,32 @@ def print_parse_string(parse_string):
             for i in range(0,len(parse_string)-3):
                 temp +=  parse_string[i:i+2] + ":"
             temp += parse_string[len(parse_string)-2:len(parse_string)]
-            print(choice,":\n",temp)
+            print(choice,":\n",temp,"\n")
         else: 
             parse_string = parse_string[2:]
             temp = ""
             for i in range(0,len(parse_string)-3):
                 temp +=  parse_string[i:i+2] + ":"
             temp += parse_string[len(parse_string)-2:len(parse_string)]
-            print(choice,":\n",temp)
+            print(choice,":\n",temp,"\n")
 
     elif Type == 5:
-        print(parse_string)
+        print(parse_string,"\n")
         
     elif Type == 6:
-        # if self.objCount >= len(OBJECT):
-        #     if RDN.get(parse_string,-1) != -1:
-        #         parse_string = RDN[parse_string]
-        #     # Algorithm
-        #     elif ALGORITHM.get(parse_string, -1)!= -1:
-        #         parse_string = ALGORITHM[parse_string]
-        #     print(parse_string)
-        #     return
-        # # Name
-        # if RDN.get(parse_string,-1) != -1:
-        #     parse_string = RDN[parse_string]
-        #     if parse_string == 'Country: ':
-        #         print(OBJECT[self.objCount])
-        #         self.objCount += 1
-        #     self.followObj = True
-        #     print('    ', parse_string)
-        # # Algorithm
-        # elif ALGORITHM.get(parse_string, -1)!= -1:
-        #     parse_string = ALGORITHM[parse_string]
-        #     print(OBJECT[self.objCount], parse_string)
-        #     self.objCount += 1
-        print(parse_string)
+        # DN
+        if DN.get(parse_string,-1) != -1:
+            parse_string = DN[parse_string]
+            if parse_string == "Country Name":
+                # print(OBJECT[self.objCount])
+                choice = OBJ_CHIOCE.get()
+                print(choice)
+            print(parse_string)
+        # Algorithm
+        elif ALGORITHM.get(parse_string, -1)!= -1:
+            parse_string = ALGORITHM[parse_string]
+            choice = OBJ_CHIOCE.get()
+            print(choice,parse_string)
 
     elif Type == 0x17 or Type == 0x18:
         choice = TIME_CHIOCE.get()
@@ -195,7 +218,7 @@ def print_parse_string(parse_string):
             print(choice,": ",parse_string)
 
     elif Type == 0x13 or Type == 0x0c:
-        print(parse_string)
+        print(parse_string,"\n")
 
 def parse_tag():   
     global Extension
@@ -275,9 +298,7 @@ def parse_tag():
         # 显式Tag
         explicit_tag = Type - 0xa0
         Tag = True
-        if(explicit_tag == 0):
-            print("version [0] EXPLICIT Version DEFAULT v1")
-        elif explicit_tag == 3:
+        if explicit_tag == 3:
             Extension = True
         Type = explicit_tag
         parse_tag()
