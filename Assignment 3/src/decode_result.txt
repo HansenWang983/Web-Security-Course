@@ -1,0 +1,55 @@
+Version :  v3 
+
+Serial Number :
+ 9d:dd:d1:14:4c:c7:7a:a8:85:55:5c:c0:0d:d6:69:97:7f:f9:92:22:22:26:64:48:84:47:7f:8f 
+
+Signature Algorithm sha1WithRSAEncryption
+1.2.840.113549.1.1.5 
+
+Issuer
+Country Name
+US 
+
+Organization Name
+DigiCert Inc 
+
+Organizational Unit Name
+www.digicert.com 
+
+Common Name
+DigiCert High Assurance CA-3 
+
+VALIDITY
+Not Before :  130514000000Z
+Not After :  160518120000Z
+Subject
+Country Name
+CA 
+
+Sate or Province Name
+Alberta 
+
+Locality Name
+Calgary 
+
+Organization Name
+SAIT Polytechnic 
+
+Common Name
+*.sait.ca 
+
+Subject Public Key Info RSAEncryption
+1.2.840.113549.1.1.1 
+
+Subject Public Key Encryption :
+ 00:09:9b:bf:f6:69:9f:f9:99:99:99:97:7d:d7:7e:e8:8d:d5:57:74:48:8d:d9:9a:a1:1f:fd:d5:56:67:75:57:71:1a:a2:26:63:39:94:43:3f:f5:5b:b4:4c:c8:83:34:4f:fa:ab:b5:54:47:74:48:86:61:14:48:8e:e0:04:4b:bc:c1:18:83:39:91:1e:e6:64:49:96:62:23:3b:b7:70:05:50:02:23:31:18:80:0f:f6:65:5a:a8:8d:de:eb:b1:17:7f:fd:d5:59:92:27:7c:ca:a7:7d:da:a7:76:65:58:81:13:3f:f5:51:17:77:70:09:95:5b:be:e3:38:80:0e:ef:f9:95:57:78:80:0e:ee:ed:d2:2c:c9:9b:b1:1f:fb:b8:80:0a:af:fe:e4:4b:bc:c1:18:84:4d:d6:6a:ae:e6:6d:d1:18:8e:ef:f7:7e:e9:94:4f:f1:16:64:40:04:40:06:66:64:45:53:37:7f:f0:05:53:35:5f:f0:05:54:46:6e:e5:5b:bf:f3:3d:d6:62:29:99:96:66:6f:fa:a3:39:91:15:5c:cc:c7:73:3e:ef:f8:87:78:8d:d4:49:96:6b:b5:50:01:1d:d2:27:7a:af:f6:60:01:1e:ef:f1:13:3d:d4:48:8d:dc:ca:ad:d1:17:71:18:80:0a:ac:c7:72:27:72:25:5b:b9:9b:ba:ad:d2:27:79:95:5e:e6:6f:f1:1d:d3:34:44:46:60:02:27:72:2c:ce:e8:84:40:01:17:77:72:21:18:89:95:58:89:95:5b:b5:5c:c6:67:76:6c:c4:48:89:95:52:24:40:0c:cb:b3:3e:e0:02:2a:a8:86:6a:a9:9d:d9:95:5e:e8:8d:d9:93:3b:b7:75:51:1f:fe:e7:7f:ff:fb:b5:50:08:85:50:02:25:5e:e3:31:13:39:91:19:9d:da:a4:49:92:25:55:51:1c:c9:9d:d0:0d:d6:62:2c:cd:dd:d4:4e:e2:28:80:0c:c8:82:24:43:3a:af:f3:37:73:35:5b:b8:83:3b:b2:27:77:7d:d6:67:74:4b:b0:01:16:6f:f1:1c:cd:d4:4a:a6:67:77:79:9e:e1:1f:f7:79:9d:d4:40:07:79:96:6c:c4:4b:bf:f7:73:30:06:6e:e0:09:92:27:71:1e:ed:dc:c0:01:15:53:3c:c4:4e:e2:2b:ba:aa:a3:35:55:5b:bb:b6:66:6d:de:ef:fd:d1:10:06:6c:c2:22:2f:ff:f5:5f:f4:46:66:67:77:70:09:98:88:8a:a9:97:7b:b8:85:5e:e2:29:96:63:3b:be:e8:8f:f7:70:0e:e7:70:0d:d9:94:4b:bf:fa:a2:25:58:88:89 
+
+--------------------EXTENSION BEGIN--------------------
+--------------------EXTENSION End----------------------
+Signature Algorithm sha1WithRSAEncryption
+1.2.840.113549.1.1.5 
+
+SIGNATURE Encryption :
+ 72:25:5d:d9:98:82:23:34:48:88:8c:c3:3b:b0:0c:c7:76:61:14:4e:e8:8d:df:fa:a0:00:0f:f2:22:2a:a0:02:2b:b4:46:67:73:39:97:79:9a:a8:83:3c:c3:3e:eb:b6:6b:b0:0c:cf:f8:81:14:45:5b:b3:3d:da:a4:4c:c1:15:59:97:7c:c3:3f:fc:ca:af:f1:10:0b:bc:cf:fc:c9:9c:c3:31:12:29:93:30:0e:ee:e4:43:3e:ed:d5:56:63:39:9a:ae:e4:41:16:6c:c4:4d:db:b5:51:10:02:2f:f0:09:92:22:22:21:1a:af:ff:fb:ba:ab:ba:a8:8d:d2:2c:c1:13:3b:b9:93:3a:a6:67:7a:ab:bc:c7:7c:c6:69:99:96:60:02:23:3b:b3:39:9e:ec:c9:99:99:9a:a7:72:29:9b:b1:13:32:2d:de:e7:7a:a0:0c:c1:1c:c3:3e:e2:29:99:9a:ad:d6:62:22:28:87:76:6c:c6:67:71:1e:e5:50:08:8d:d5:59:9e:e0:06:6c:c4:4f:fe:ea:a2:20:03:32:2e:e6:6b:b1:18:88:82:2d:d2:29:9c:cc:ce:e1:14:4c:c2:2b:b6:60:01:10:0c:cd:d6:61:1f:fc:c8:81:1e:e5:53:3b:b7:71:1e:e8:8e:ec:c8:85:5d:dd:dd:d9:91:1a:af:f8:80:0a:aa:a7:78:8c:ca:a0:0c:cd:da:af:ff:f8:8c:c4:4d:d5:5d:d8:85:56:61:15:51:11:18:85:50:07:72:26:69:9d:d0:04:40:05:54:4f:fc:c0:03:32:2e:e0:06:63:33:3d:df:fe:e9:98:84:4f:ff:f5:59:97:73:30:0d:da:ab:ba:a7:7e:e7:7f:f9:96:62:26:69:9c:c5:5c:ca:ab:b0:02:24:49:92:2a:ad:d0:06:61:1e:ed:dc:cd:da:af:f4:45:53:39:92:25:56:6a:a1:16:6e:e1:1d:d4:45:56:6a:a2:22:27:74:46:68:85:52:26:64:40:0c:c7:7e:e2:2d:d6:6a:ac:c6:6c:c3:3e:eb:bd:d2:25:50:0f:f1:11:1d:d9:95:5e:e4:4e:e4:4a:ae:e1:18:87:7e:e9:90:0e:ec:c4:41:1a:a5:5a:a4:4d:d9:97:7e:eb:ba:a7:7a:aa:ad:d5:53:32:22:2a:ac:c0:00:0b:bf:f3:3a:a1:1e:ef:f8:83:33:31:17:79:90:0f:f9:9d:d4:42:2f:f5:53:39:98:85:55:5c:c4:4b:b5:57:74:4e:e5:53:3c:ca:a9:9e:e3:3a:a2:2a:a9:9f:f5:54:4c:c2:2e:e1:11:1a:aa:a9:9a:aa:af:f8:87:7e:e1:14:47:75:58:8f:25 
+
+read end of file
