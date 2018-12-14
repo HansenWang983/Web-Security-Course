@@ -78,6 +78,7 @@ def parse_Length(nextByte):
 def parse_Integer():
     res_string = ""
     nextByte = ord(f.read(1))
+    # 得到字节长度长度
     length = parse_Length(nextByte)
     for i in range(0, length):
         # 16进制表示

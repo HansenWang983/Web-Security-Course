@@ -53,7 +53,7 @@ openssl x509 -inform der -in certificate.cer -out certificate.pem #DER 转为 PE
 参考：
 
 1. [ASN1 decoder](https://lapo.it/asn1js/#MIIG4TCCBcmgAwIBAgIQCd0Ux6hVwNaX-SICZIR_jzANBgkqhkiG9w0BAQUFADBmMQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3d3cuZGlnaWNlcnQuY29tMSUwIwYDVQQDExxEaWdpQ2VydCBIaWdoIEFzc3VyYW5jZSBDQS0zMB4XDTEzMDUxNDAwMDAwMFoXDTE2MDUxODEyMDAwMFowYDELMAkGA1UEBhMCQ0ExEDAOBgNVBAgTB0FsYmVydGExEDAOBgNVBAcTB0NhbGdhcnkxGTAXBgNVBAoTEFNBSVQgUG9seXRlY2huaWMxEjAQBgNVBAMMCSouc2FpdC5jYTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJv2n5mZfX6NV0jZof1WdXGiY5Q_W0yDT6tUdIYUjgS8GDkeZJYjtwUCMYD2Wo3rF_1ZJ8p9p2WBP1F3CVvjgO-VeA7tLJsfuAr-S8GE1q5tGO9-lPFkBAZkU38FNfBUblvz1imWb6ORXMc--HjUlrUB0nr2Ae8T1I3K0XGArHJyW5utJ5Xm8dNEYCcs6EAXchiViVtcZ2xIlSQMs-AqhqnZXo2Tt1H-f_tQhQJeMTkZ2kklUcnQ1izdTigMgkOvNzW4Oyd9Z0sBbxzUpneeH3nUB5bEv3MG4JJx7cAVPE4rqjVbtm3v0QbCL_X0ZncJiKl7heKWO-j3DnDZS_oliIkCAwEAAaOCA48wggOLMB8GA1UdIwQYMBaAFFDqc4nbKfsQj57lASDU3nmZSIP3MB0GA1UdDgQWBBTk00KEbrhrTuVWBY2cPzTJd1c1BTBkBgNVHREEXTBbggkqLnNhaXQuY2GCB3NhaXQuY2GCCmNwLnNhaXQuY2GCDmNwLXVhdC5zYWl0LmNhghd1YXQtaW50ZWdyYXRpb24uc2FpdC5jYYIQdWF0LWFwYXMuc2FpdC5jYTAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMGEGA1UdHwRaMFgwKqAooCaGJGh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9jYTMtZzIxLmNybDAqoCigJoYkaHR0cDovL2NybDQuZGlnaWNlcnQuY29tL2NhMy1nMjEuY3JsMIIBxAYDVR0gBIIBuzCCAbcwggGzBglghkgBhv1sAQEwggGkMDoGCCsGAQUFBwIBFi5odHRwOi8vd3d3LmRpZ2ljZXJ0LmNvbS9zc2wtY3BzLXJlcG9zaXRvcnkuaHRtMIIBZAYIKwYBBQUHAgIwggFWHoIBUgBBAG4AeQAgAHUAcwBlACAAbwBmACAAdABoAGkAcwAgAEMAZQByAHQAaQBmAGkAYwBhAHQAZQAgAGMAbwBuAHMAdABpAHQAdQB0AGUAcwAgAGEAYwBjAGUAcAB0AGEAbgBjAGUAIABvAGYAIAB0AGgAZQAgAEQAaQBnAGkAQwBlAHIAdAAgAEMAUAAvAEMAUABTACAAYQBuAGQAIAB0AGgAZQAgAFIAZQBsAHkAaQBuAGcAIABQAGEAcgB0AHkAIABBAGcAcgBlAGUAbQBlAG4AdAAgAHcAaABpAGMAaAAgAGwAaQBtAGkAdAAgAGwAaQBhAGIAaQBsAGkAdAB5ACAAYQBuAGQAIABhAHIAZQAgAGkAbgBjAG8AcgBwAG8AcgBhAHQAZQBkACAAaABlAHIAZQBpAG4AIABiAHkAIAByAGUAZgBlAHIAZQBuAGMAZQAuMHsGCCsGAQUFBwEBBG8wbTAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuZGlnaWNlcnQuY29tMEUGCCsGAQUFBzAChjlodHRwOi8vY2FjZXJ0cy5kaWdpY2VydC5jb20vRGlnaUNlcnRIaWdoQXNzdXJhbmNlQ0EtMy5jcnQwDAYDVR0TAQH_BAIwADANBgkqhkiG9w0BAQUFAAOCAQEAcl2YI0iMOwx2FOjfoA8ioCtGc5eag8Prawz4FFs9pMFZfD_K8QvPycMSkw7kPtVjmuQWxNtRAvCSIhr_urqNLBO5Omerx8aZYCOznsmZpymxMt56DBw-KZrWIodsZx5QjVngbE_qIDLmsYgtKczhTCtgEM1h_IHlO3Ho7IXd2Rr4CqeMoM2v-MTV2FYVEYUHJp0EBU_AMuBjPf6YT_WXMNq6fn-WJpxcqwJJKtBh7c2vRTklahbh1FaiJ0aFJkDH4tasbD69JQ8R2V5OSuGH6Q7EGlpNl-unqtUyKsAL86HvgzF5D51C9TmFXEtXTlPKnjoqn1TC4Rqpqvh-FHWPJQ)
-2. [ASN1字段类型](https://nostdahl.com/2017/08/11/x-509-certificates-explained/)
+2. [ASN1 字段类型](https://nostdahl.com/2017/08/11/x-509-certificates-explained/)
 
 
 
@@ -121,7 +121,7 @@ openssl x509 -inform der -in certificate.cer -out certificate.pem #DER 转为 PE
 
 DER二进制文件的前4个字节构成具有剩余字节的ASN.1序列。
 
-如`30 82 06 E1`根据Type-Length-Value表示，第一个字节30（00110000）表示是一个universal class type，后面是一个结构化类型的SEQUENCE。
+如`30 82 06 E1`根据Type-Length-Value表示，第一个字节30（00110000）表示是一个universal class type，后面接着一个结构化类型的SEQUENCE。
 
 
 
@@ -138,6 +138,12 @@ DER二进制文件的前4个字节构成具有剩余字节的ASN.1序列。
 
 
 3. Value数据块字段：存放数据块的值，具体编码随数据块类型不同而不同
+
+   | Type |      |
+   | ---- | ---- |
+   |      |      |
+   |      |      |
+   |      |      |
 
 4. 数据块结束标识（可选），结束标示字段，两个字节（0x0000）,只有在长度值为不定时才会出现。
 
@@ -181,6 +187,17 @@ TBSCertificate  ::=  SEQUENCE  {
 Version  ::=  INTEGER  {  v1(0), v2(1), v3(2)  }
 ```
 
+建立映射关系，将解析出的整数（16进制字符串表示）对应到版本号输出。
+
+```python
+# 版本号映射
+Version = {
+    "0" : "v1",
+    "1" : "v2",
+    "2" : "v3"
+}
+```
+
 
 
 **证书序列号**
@@ -189,6 +206,20 @@ Version  ::=  INTEGER  {  v1(0), v2(1), v3(2)  }
 
 ```
 CertificateSerialNumber  ::=  INTEGER
+```
+
+例如`02 10 09 DD 14 C7 A8 55 C0 D6 97  F9 22 02 64 84 7F 8F`用16个字节表示序列号的值
+
+```python
+def parse_Integer():
+    res_string = ""
+    nextByte = ord(f.read(1))
+    # 得到字节长度长度
+    length = parse_Length(nextByte)
+    for i in range(0, length):
+        # 16进制表示
+        res_string += hex(ord(f.read(1)))[2:]
+    return res_string
 ```
 
 
